@@ -6,12 +6,31 @@ public class Employee {
 
 	private String name;
 
+	public Employee() {
+	}
+
 	private Integer age;
 
 	private Long mobileno;
 
 	public String getEmpID() {
 		return empID;
+	}
+
+	public void setEmpID(String empID) {
+		this.empID = empID;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public void setAge(Integer age) {
+		this.age = age;
+	}
+
+	public void setMobileno(Long mobileno) {
+		this.mobileno = mobileno;
 	}
 
 	public String getName() {

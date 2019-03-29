@@ -20,11 +20,16 @@ import org.springframework.stereotype.Component;
 import com.kanth.springbootjerseydemo.bo.Employee;
 import com.kanth.springbootjerseydemo.service.EmployeeListService;
 
-@Path("/api")
+/**
+ * 
+ * @author ramakanth.b
+ *  example : http://localhost:9981/rest/api/getAllEmp
+ */
 @Component
+@Path("/api")
 public class EmployeeController {
 
-	private static final String APPLICATIONJSON = ("application/json");
+	private static final String APPLICATIONJSON = "application/json";
 
 	@Autowired
 	private EmployeeListService employeeService;
